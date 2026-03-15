@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: rgb(34, 57, 63);
+}
+
+ /* //header// */
+ .head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+ }
+ .logo img{
+   width: 80px;
+ }
+ .nav-links{
+    list-style: none;
+    display: flex;
+ }
+ .nav-links li{
+     margin-left:30px;
+    font-weight:bold;
+}
+button{
+    padding:10px 20px;
+    border:none;
+    background:rgb(97,56,57);
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(70, 55, 24);
+    color: rgb(255, 255, 255);
+}
+.pic{
+    object-fit: cover;
+    width: 100%;
+}
+.left{
+    width: 60%;
+}
+.left img{
+ width: 500px;
+}
+.right{
+    width: 50%;
+}
+.para{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        
+}
+.para2{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:  10px 50px;
+background-color: rgb(213,200,180 );
+}
+
+.right2 img{
+width:500px;
+}
+
+.left2{
+max-width:500px;
+}
+
+.left2 h2{
+margin-bottom:15px;
+font-size:32px;
+}
+.active{
+ color: rgb(97,56,57)!important;
+}
+.nav-links li:hover{
+    color: blue;
+}
+/* tab screen  */
+@media (max-width:1024px){
+
+    .para,
+    .para2{
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .left,
+    .right,
+    .left2,
+    .right2{
+        width:100%;
+    }
+
+    .left img,
+    .right2 img{
+        width:100%;
+        max-width:400px;
+    }
+
+    .nav-links li{
+        margin-left:20px;
+        font-size:14px;
+    }
+
+}
+/* phone screen */
+@media (max-width:768px){
+
+    .head{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    button{
+        margin-top:10px;
+    }
+
+    .para,
+    .para2{
+        padding:20px;
+    }
+
+}
